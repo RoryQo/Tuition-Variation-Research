@@ -17,3 +17,11 @@
 #### Results
   These results show that we can explain most of the tuition variability while holding time constant. Tuition increases as the school rank gets better (lower in number). This relationship is expected because more desirable (prestigious) schools can leverage this and charge their students a premium. What's impressive is the significance of this relationship. In a simple linear regression, Rank accounts for 65% of tuition variation.
 	Variables in this model that were insignificant tell us just as much about the higher education market as the ones that were. Besides Rank, no other institution metrics were statistically significant at the 0.1 confidence level (excluding the private vs. public control). Student-to-faculty ratios, graduation rate, or percentage of alumni donating to the university were irrelevant to predicting tuition despite these metrics being widely touted and used in recruitment brochures and websites. Today's college students pay for Prestige rather than a school that invests in them.
+
+#### Data Cited
++ Vaughan, Zach. (2016 &; January). City/Zip/County/FIPS- Quality of Life (US). Retrieved
+2/21/2024 from City/ZIP/County/FIPS - Quality of Life (US) (kaggle.com).
++ Gupta, Yash. (2020 &; Month of dataset creation). US College Data. Retrieved 2/21/2024 from
+https://www.kaggle.com/datasets/yashgpt/us-college-data/dataData (kaggle.com).
+
+ 
