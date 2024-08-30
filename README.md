@@ -14,7 +14,7 @@
 + ***Diversity Rank*** (by race),  the ranking number of the city by diversity.  The more racially diverse the lower (numerically) the ranking number
 + ***Expend***, the amount of money the school uses per student.
 
-#### Inferntial Statistics
+#### Inferential Statistics
 
 Table 2 displays the model summary of each predictor discussed above.  Institutional rank, Institutional control, and Median income were all significant at above the .001 significance level. Diversity rank was significant at the .05, and unemployment was significant at the .1 level.  Of all predictors, rank is the most significant, by at least two orders of magnitude above all other predictors. Overall the model has a large explanatory power of tuition,  with an adjusted R squared value of 0.87.  This explanatory power is further validated by the cross validation (LOOCV).  After validation the model still performed with a 0.85 R squared value, indicating there aren't any severe overfitting problems, and could be a useful model in the future with more data.  Table 3 displays the results of the cross validation.
 
