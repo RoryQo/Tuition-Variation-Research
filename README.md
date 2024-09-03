@@ -6,13 +6,13 @@
   Understanding the variations of tuition can add insight to much of the time series research, as these studies are usually only aggregates of tuition averages. As well as establish a market value for a college given key predictors. With this model, you can determine if a college is over or underpriced compared to the market value, allowing you to maximize your return on investment and minimize your personal student loan debt.
 
 #### Variables
-+ ***Institutional control*** is a categorical variable that states whether a university is public or private. Public is coded as 0, and private is coded as 1.
-+ ***Rank*** a number assigned to each college according to the US News and World Report; the lower the number, the "higher rank" or more prestigious the university.
-+ ***Number of undergraduates***, the number of undergraduates currently attending that university (2020)
-+ ***Unemployment***, the percentage of the city population unemployed
-+ ***Median income***, median income reported by the Economic Policy Institute (2022)
-+ ***Diversity Rank*** (by race),  the ranking number of the city by diversity.  The more racially diverse the lower (numerically) the ranking number
-+ ***Expend***, the amount of money the school uses per student.
++ `Institutional control` is a categorical variable that states whether a university is public or private. Public is coded as 0, and private is coded as 1.
++ `Rank` a number assigned to each college according to the US News and World Report; the lower the number, the "higher rank" or more prestigious the university.
++ `Number of undergraduates`, the number of undergraduates currently attending that university (2020)
++ `Unemployment`, the percentage of the city population unemployed
++ `Median income`, median income reported by the Economic Policy Institute (2022)
++ `Diversity Rank` (by race),  the ranking number of the city by diversity.  The more racially diverse the lower (numerically) the ranking number
++ `Expend`, the amount of money the school uses per student.
 
 #### Inferential Statistics
 
