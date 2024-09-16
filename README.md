@@ -23,6 +23,3 @@ Today's college students pay for Prestige rather than a school that invests in t
 
 Using the model to test whether I am paying too much for college, I imputed data according to the University of Pittsburgh and used the model to predict tuition based on these metrics. It revealed that for in-state students, Pitt was priced below market value; however, for out-of-state students, it is $9,000 above the expected value. As an instate student, it appears I am getting a high ROI compared to out of state students on my education investment.
 
-### Data Cited
-Vaughan, Zach. (2016 &; January). City/Zip/County/FIPS- Quality of Life (US). Retrieved 2/21/2024 from City/ZIP/County/FIPS - Quality of Life (US) (kaggle.com).
-Gupta, Yash. (2020 &; Month of dataset creation). US College Data. Retrieved 2/21/2024 from https://www.kaggle.com/datasets/yashgpt/us-college-data/dataData (kaggle.com).
