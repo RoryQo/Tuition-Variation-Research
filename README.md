@@ -1,4 +1,8 @@
-# Tuition Prediction Project README
+<div align="center">
+
+# Tuition Variation and Prediction Project
+
+</div>
 
 ## Table of Contents
 1. [Statement of Purpose](#statement-of-purpose)
