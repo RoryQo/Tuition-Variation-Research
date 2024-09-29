@@ -72,14 +72,6 @@ The study uses seven predictors:
 - Ensured all variables were correctly formatted to align with analytical requirements.
 - Final dataset comprised 60 well-structured observations reflecting top US universities.
 
-### Regression Analysis
-- Focused on fitting a linear model to the cleaned dataset using selected predictors.
-- Evaluated the significance of each predictor's contribution to the overall model:
-  - Highlighted the critical role of institutional rank in explaining tuition variability.
-  - Demonstrated that other metrics were largely insignificant.
-- Indicated minimal overfitting using leave-one-out cross-validation (LOOCV):
-  - R-squared value remained stable across various data subsets.
-  - Suggested effective generalization to unseen data, enhancing model reliability.
 
 ### Exploration
 - Conducted data exploration through visualizations and descriptive statistics:
@@ -89,6 +81,16 @@ The study uses seven predictors:
 
 ## Model Summary
 The model results reveal significant predictors of tuition rates. The analysis provides estimates for each predictor, indicating that higher-ranked institutions tend to have lower tuition. Significant predictors include institutional control, rank, median income, and expenditure per student.
+
+### Regression Analysis
+- Focused on fitting a linear model to the cleaned dataset using selected predictors.
+- Evaluated the significance of each predictor's contribution to the overall model:
+  - Highlighted the critical role of institutional rank in explaining tuition variability.
+  - Demonstrated that other metrics were largely insignificant.
+- Indicated minimal overfitting using leave-one-out cross-validation (LOOCV):
+  - R-squared value remained stable across various data subsets.
+  - Suggested effective generalization to unseen data, enhancing model reliability.
+
 
 ## Data
 The datasets were collected from reputable sources, ensuring quality and reliability. The final dataset was cleaned and prepared for analysis, focusing on the top 400 universities in the US.
