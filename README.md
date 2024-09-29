@@ -14,7 +14,7 @@
    - [Statistical Modeling](#statistical-modeling)
    - [Wrangling](#wrangling)
    - [Exploration](#exploration)
-5. - [Model Summary](#model-summary)
+5. [Model Summary](#model-summary)
      - [Regression Analysis](#regression-analysis)
 6. [Data](#data)
 7. [Usage](#usage)
