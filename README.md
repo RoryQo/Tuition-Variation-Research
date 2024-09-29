@@ -1,25 +1,31 @@
-# Tuition-Variation-Research
-### Abstract
-This project isolates and uses key factors to predict yearly out-of-state tuition for public and private four-year universities across the United States within the same year. Institutional, quality of life, and crime rate metrics will be observed and used to explain the differences between current university tuition rates. The data used for this model consists of 60 observations, each representing a four-year university in the US. These 60 observations are a sample of the top 400 US universities. This study uses seven predictors in a linear model to predict variability in tuition across universities and utilizes the leave one out cross-validation technique. The model was able to account for over 85% of the variability of the tuition rates and found that the only significant institutional metric contributing to tuition cost was The university’s national ranking.
+# Tuition Variation Research
 
-### Statment of Purpose
-Understanding the variations of tuition can add insight to much of the time series research, as these studies are usually only aggregates of tuition averages. As well as establish a market value for a college given key predictors. With this model, you can determine if a college is over or underpriced compared to the market value, allowing you to maximize your return on investment and minimize your personal student loan debt.
+### Table of Contents
+1. [Abstract](#abstract)
+2. [Statement of Purpose](#statement-of-purpose)
+3. [Variables](#variables)
+4. [Inferential Statistics](#inferential-statistics)
+5. [Results and Conclusion](#results-and-conclusion)
+
+### Abstract
+This project isolates and analyzes key factors to predict yearly out-of-state tuition for public and private four-year universities across the United States. It examines institutional, quality of life, and crime rate metrics to explain the differences in tuition rates. The analysis is based on 60 observations, each representing a four-year university. This study utilizes seven predictors in a linear model to account for variability in tuition across universities and employs the leave-one-out cross-validation technique. The model accounts for over 85% of the variability in tuition rates, identifying the university's national ranking as the only significant institutional metric affecting tuition costs.
+
+### Statement of Purpose
+Understanding the variations in tuition provides valuable insights into educational financing and market trends. This research establishes a market value for colleges based on key predictors, enabling prospective students to determine whether a college is overpriced or underpriced compared to its market value. Ultimately, this can help students maximize their return on investment and minimize student loan debt.
 
 ### Variables
-+ `Institutional control:` is a categorical variable that states whether a university is public or private. Public is coded as 0, and private is coded as 1.
-+ `Rank:` a number assigned to each college according to the US News and World Report; the lower the number, the "higher rank" or more prestigious the university.
-+ `Number of undergraduates:` the number of undergraduates currently attending that university (2020)
-+ `Unemployment:` the percentage of the city population unemployed (as decimal)
-+ `Median income:`median income reported by the Economic Policy Institute (2022)
-+ `Diversity Rank (by race):` the ranking number of the city by diversity. The more racially diverse the lower (numerically) the ranking number
-+ `Expend:` the amount of money the school uses per student.
+- **Institutional Control**: A categorical variable indicating whether a university is public (coded as 0) or private (coded as 1).
+- **Rank**: A numerical ranking assigned to each college by the US News and World Report; lower numbers indicate higher prestige.
+- **Number of Undergraduates**: The total number of undergraduate students enrolled in the university as of 2020.
+- **Unemployment**: The percentage of the city's population that is unemployed (expressed as a decimal).
+- **Median Income**: The median income reported by the Economic Policy Institute (2022).
+- **Diversity Rank**: A ranking of the city based on racial diversity; lower numbers indicate greater diversity.
+- **Expend**: The amount of money spent per student by the university.
 
 ### Inferential Statistics
-In the model summary of each predictor discussed above, Institutional rank, Institutional control, and Median income were all significant at above the .001 significance level. Diversity rank was significant at the .05, and unemployment was significant at the .1 level. Of all predictors, rank is the most significant, by at least two orders of magnitude above all other predictors. Overall the model has a large explanatory power of tuition, with an adjusted R squared value of 0.87. This explanatory power is further validated by the cross validation (LOOCV). After validation the model still performed with a 0.85 R squared value, indicating there aren't any severe overfitting problems, and could be a useful model in the future with more data. Table 3 displays the results of the cross validation.
+The model summary reveals that Institutional Rank, Institutional Control, and Median Income are significant predictors at the .001 significance level. Diversity Rank is significant at the .05 level, while Unemployment is significant at the .1 level. Among all predictors, Rank is the most significant, contributing to a substantial explanatory power with an adjusted R-squared value of 0.87. This robustness is further validated through cross-validation, where the model retains an R-squared value of 0.85, indicating minimal overfitting and potential for future applications with additional data.
 
-## Results
-These results show that we can explain most of the tuition variability while holding time constant. Tuition increases as the school rank gets better (lower in number). This relationship is expected because more desirable (prestigious) schools can leverage this and charge their students a premium. What's impressive is the significance of this relationship. In a simple linear regression, Rank accounts for 65% of tuition variation. Variables in this model that were insignificant tell us just as much about the higher education market as the ones that were. Besides Rank, no other institution metrics were statistically significant at the 0.01 confidence level (excluding the private vs. public control). Student-to-faculty ratios, graduation rate, or percentage of alumni donating to the university were irrelevant to predicting tuition despite these metrics being widely touted and used in recruitment brochures and websites. 
-Today's college students pay for Prestige rather than a school that invests in them. 
+### Results and Conclusion
+The findings demonstrate that tuition variability can be largely explained while controlling for time. Tuition tends to increase as the university rank improves, which aligns with the expectation that more prestigious institutions can charge higher fees. Interestingly, beyond Rank, no other institutional metrics, such as student-to-faculty ratios or graduation rates, significantly predict tuition costs, suggesting that students are primarily paying for prestige rather than institutional support or investment.
 
-Using the model to test whether I am paying too much for college, I imputed data according to the University of Pittsburgh and used the model to predict tuition based on these metrics. It revealed that for in-state students, Pitt was priced below market value; however, for out-of-state students, it is $9,000 above the expected value. As an instate student, it appears I am getting a high ROI compared to out of state students on my education investment.
-
+Utilizing the model to evaluate the University of Pittsburgh, it appears that in-state tuition is priced below market value, while out-of-state tuition exceeds the expected value by $9,000. This analysis indicates that in-state students may experience a significantly higher return on investment compared to their out-of-state counterparts. Overall, this research highlights the critical role of university ranking in determining tuition costs and provides valuable insights for prospective students to make informed decisions about their educational investments.
