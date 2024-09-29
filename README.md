@@ -32,6 +32,7 @@ These results show that we can explain most of the tuition variability while hol
 	
  Variables in this model that were insignificant tell us just as much about the higher education market as the ones that were. Besides Rank, no other institutional metrics were statistically significant at the 0.1 confidence level (excluding the private vs. public control). Student-to-faculty ratios, graduation rate, or percentage of alumni donating to the university were irrelevant to predicting tuition despite these metrics being widely touted and used in recruitment brochures and websites. Today's college students pay for Prestige rather than a school that invests in them.
 
+To evaluate my own tuition costs, I applied the model to the University of Pittsburgh (Pitt). The analysis indicated that out-of-state students face tuition that is approximately $9,000 above the expected value. This indicates that, as an in-state student, I am likely receiving a higher return on investment (ROI) compared to my out-of-state peers. Notably, the model's successful prediction of Pitt's tuition underscores its practical applicability in real-world scenarios, offering valuable insights for prospective students evaluating their educational investments.
 
 ## Methodology
 
