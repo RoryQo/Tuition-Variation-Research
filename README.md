@@ -66,6 +66,10 @@ The study uses seven predictors:
 
 ### Wrangling
 - Conducted systematic data cleaning and organization to prepare for analysis:
+  - Merged three separate datasets to create a comprehensive dataset:
+    - **US College Data** from Kaggle, providing institutional characteristics.
+    - **Quality of Life Data** sourced from the FCC, offering economic indicators.
+    - **Crime Rates by City** dataset from City-Data.com, detailing safety metrics.
   - Identified and addressed missing values through imputation or removal.
   - Categorical variables were appropriately encoded for analysis.
   - Checked continuous variables for outliers and inconsistencies.
