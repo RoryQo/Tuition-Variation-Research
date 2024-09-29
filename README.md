@@ -50,16 +50,42 @@ The study uses seven predictors:
 - **Expenditure per Student**: Financial resources spent per student.
 
 ### Statistical Modeling
-A linear model was constructed using the seven predictors to assess the variability of tuition across universities. Leave-one-out cross-validation (LOOCV) was utilized to validate the model.
+- Constructed a comprehensive linear model using seven identified predictors to assess tuition variability.
+- Predictors included:
+  - Institutional control (public or private)
+  - National rank
+  - Number of undergraduates
+  - Unemployment rate
+  - Median income
+  - Diversity rank
+  - Expenditure per student
+- Employed leave-one-out cross-validation (LOOCV) for model validation:
+  - Iteratively trained the model on all observations except one.
+  - Used the excluded observation as a test set.
+  - Provided a rigorous assessment of predictive capabilities across multiple iterations.
 
 ### Wrangling
-Data was cleaned and organized to ensure compatibility with the analysis. Missing values were addressed, and variables were formatted correctly.
+- Conducted systematic data cleaning and organization to prepare for analysis:
+  - Identified and addressed missing values through imputation or removal.
+  - Categorical variables were appropriately encoded for analysis.
+  - Checked continuous variables for outliers and inconsistencies.
+- Ensured all variables were correctly formatted to align with analytical requirements.
+- Final dataset comprised 60 well-structured observations reflecting top US universities.
 
 ### Regression Analysis
-The regression analysis involved fitting a linear model to the data using the selected predictors. The use of leave-one-out cross-validation (LOOCV) indicated minimal overfitting, as the R-squared value remained stable across different subsets of the data. This suggests that the model generalizes well to unseen data, enhancing its reliability for future applications.
+- Focused on fitting a linear model to the cleaned dataset using selected predictors.
+- Evaluated the significance of each predictor's contribution to the overall model:
+  - Highlighted the critical role of institutional rank in explaining tuition variability.
+  - Demonstrated that other metrics were largely insignificant.
+- Indicated minimal overfitting using leave-one-out cross-validation (LOOCV):
+  - R-squared value remained stable across various data subsets.
+  - Suggested effective generalization to unseen data, enhancing model reliability.
 
 ### Exploration
-Data exploration included visualizations and descriptive statistics to understand the distribution and relationships among the variables.
+- Conducted data exploration through visualizations and descriptive statistics:
+  - Utilized histograms and scatter plots to illustrate the distribution of tuition rates and correlations among predictors.
+  - Calculated descriptive statistics to summarize central tendency, dispersion, and data distribution shape.
+- Identified patterns and anomalies in the data, informing the modeling process and enhancing understanding of factors influencing tuition rates across institutions.
 
 ## Model Summary
 The model results reveal significant predictors of tuition rates. The analysis provides estimates for each predictor, indicating that higher-ranked institutions tend to have lower tuition. Significant predictors include institutional control, rank, median income, and expenditure per student.
