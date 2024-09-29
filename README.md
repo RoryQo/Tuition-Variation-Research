@@ -37,7 +37,7 @@ To evaluate my own tuition costs, I applied the model to the University of Pitts
 ## Methodology
 
 ### Data Collection
-The data used for this model consists of 60 observations representing four-year universities in the US, sourced from three public datasets available on Kaggle. These datasets include metrics such as institutional characteristics, quality of life, and crime rates.
+The data used for this model consists of 60 observations representing four-year universities in the US, sourced from three publicly available datasets. These datasets include metrics such as institutional characteristics, quality of life, and crime rates.
 
 ### Variables
 The study uses seven predictors:
