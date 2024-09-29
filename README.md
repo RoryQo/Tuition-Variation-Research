@@ -3,21 +3,19 @@
 ## Table of Contents
 1. [Statement of Purpose](#statement-of-purpose)
 2. [Abstract](#abstract)
-3. [Methodology](#methodology)
+3. [Key Findings](#key-findings)
+4. [Methodology](#methodology)
    - [Data Collection](#data-collection)
-   - [Data Wrangling](#data-wrangling)
    - [Variables](#variables)
    - [Statistical Modeling](#statistical-modeling)
+   - [Wrangling](#wrangling)
    - [Regression Analysis](#regression-analysis)
    - [Exploration](#exploration)
-4. [Results and Conclusions](#results-and-conclusions)
-   - [Descriptive Statistics](#descriptive-statistics)
-   - [Model Summary](#model-summary)
-   - [Key Findings](#key-findings)
-5. [Data](#data)
-6. [Usage](#usage)
-7. [Limitations and Future Research](#limitations-and-future-research)
-8. [References](#references)
+5. - [Model Summary](#model-summary)
+6. [Data](#data)
+7. [Usage](#usage)
+8. [Limitations and Future Research](#limitations-and-future-research)
+9. [References](#references)
 
 ## Statement of Purpose
 This paper isolates and uses key factors to predict tuition for public and private four-year universities across the United States within the same year. Institutional, quality of life, and crime rate metrics are observed to explain the differences between current university tuition rates. While much research has been conducted to explain time series data of tuition increases, research to explain the variation in tuition prices while holding time constant is scarce. Understanding these variations can provide insights into time series research and establish market value for colleges based on key predictors, helping students maximize their return on investment and minimize student loan debt.
@@ -25,16 +23,16 @@ This paper isolates and uses key factors to predict tuition for public and priva
 ## Abstract
 This paper isolates and uses key factors to predict tuition for public and private four-year universities within the same year. A total of 60 observations from the top 400 US universities are analyzed using seven predictors in a linear model. The model accounts for over 85% of the variability in tuition rates, with the university's national ranking identified as the only significant institutional metric contributing to tuition cost.
 
+## Key Findings
+These results show that we can explain most of the tuition variability while holding time constant. Tuition increases as the school ranks improve. This relationship is expected because more desirable (prestigious) schools can leverage this and charge their students a premium. What's impressive is the significance of this relationship. In a simple linear regression, Rank accounts for 65% of tuition variation.
+	
+ Variables in this model that were insignificant tell us just as much about the higher education market as the ones that were. Besides Rank, no other institutional metrics were statistically significant at the 0.1 confidence level (excluding the private vs. public control). Student-to-faculty ratios, graduation rate, or percentage of alumni donating to the university were irrelevant to predicting tuition despite these metrics being widely touted and used in recruitment brochures and websites. Today's college students pay for Prestige rather than a school that invests in them.
+
+
 ## Methodology
 
 ### Data Collection
 The data used for this model consists of 60 observations representing four-year universities in the US, sourced from three public datasets available on Kaggle. These datasets include metrics such as institutional characteristics, quality of life, and crime rates.
-
-### Data Wrangling
-In this step, the raw datasets were cleaned and prepared for analysis. Key processes included:
-- **Handling Missing Values**: Any missing data points were addressed either by imputation or removal.
-- **Standardizing Formats**: Ensured all variables were in consistent formats (e.g., numerical values for income).
-- **Creating Categorical Variables**: Converted necessary variables into categorical formats for regression analysis.
 
 ### Variables
 The study uses seven predictors:
@@ -49,33 +47,17 @@ The study uses seven predictors:
 ### Statistical Modeling
 A linear model was constructed using the seven predictors to assess the variability of tuition across universities. Leave-one-out cross-validation (LOOCV) was utilized to validate the model.
 
+### Wrangling
+Data was cleaned and organized to ensure compatibility with the analysis. Missing values were addressed, and variables were formatted correctly.
+
 ### Regression Analysis
-In this section, the linear regression model was fitted to the data, allowing us to evaluate the relationship between tuition and the predictors. Key steps included:
-- **Model Fitting**: The model was fitted using ordinary least squares (OLS) regression.
-- **Significance Testing**: Coefficients were evaluated for statistical significance to identify influential predictors.
+The regression analysis involved fitting a linear model to the data using the selected predictors. The use of leave-one-out cross-validation (LOOCV) indicated minimal overfitting, as the R-squared value remained stable across different subsets of the data. This suggests that the model generalizes well to unseen data, enhancing its reliability for future applications.
 
 ### Exploration
-Exploratory data analysis (EDA) was conducted to visualize and understand the data better. Techniques included:
-- **Histograms and Boxplots**: Used to visualize distributions of key variables.
-- **Correlation Analysis**: Examined relationships between predictors and the response variable (tuition).
-- **Summary Statistics**: Generated to provide a quick overview of the data characteristics.
+Data exploration included visualizations and descriptive statistics to understand the distribution and relationships among the variables.
 
-## Results and Conclusions
-
-### Descriptive Statistics
-The sample consists of 37 private universities and 23 public universities, with different rank distributions.
-
-### Model Summary
-The model results reveal that:
-- Institutional rank, control, and median income were all significant at the 0.001 level.
-- Diversity rank was significant at the 0.05 level, and unemployment at the 0.1 level.
-- Among all predictors, rank is the most significant, by at least two orders of magnitude above all other predictors.
-
-Overall, the model demonstrates substantial explanatory power for tuition, evidenced by an adjusted R-squared value of 0.87. This robustness is further supported by leave-one-out cross-validation (LOOCV), which yielded an R-squared value of 0.85, indicating minimal risk of overfitting. Thus, this model has strong potential for future applications with additional data.
-
-
-### Key Findings
-The analysis indicates that tuition increases as the university's rank improves, underscoring that prestige plays a significant role in tuition pricing. Interestingly, no other institutional metrics were statistically significant at the 0.1 level, highlighting that the market currently favors prestige over other factors.
+## Model Summary
+The model results reveal significant predictors of tuition rates. The analysis provides estimates for each predictor, indicating that higher-ranked institutions tend to have lower tuition. Significant predictors include institutional control, rank, median income, and expenditure per student.
 
 ## Data
 The datasets were collected from reputable sources, ensuring quality and reliability. The final dataset was cleaned and prepared for analysis, focusing on the top 400 universities in the US.
