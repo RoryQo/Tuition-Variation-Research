@@ -76,6 +76,15 @@ best_model
   - Iteratively trained the model on all observations except one.
   - Used the excluded observation as a test set.
   - Provided a rigorous assessment of predictive capabilities across multiple iterations.
+```
+  # Model validation
+# Use Leave One Our Cross Validation
+
+ctrl = trainControl(method = "LOOCV")
+model1 = train(Tuition ~ Rank + institutionalControl + Median_Income + 
+Diversity_Rank_Race + Unemployment + number_Undergrads + Expend, data = obs_60_final, method = "lm", trControl = ctrl)
+model1$results
+```
 
 ### Wrangling
 - Conducted systematic data cleaning and organization to prepare for analysis:
