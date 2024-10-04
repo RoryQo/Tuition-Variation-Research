@@ -60,6 +60,18 @@ The study uses seven predictors:
   - Diversity rank
   - Expenditure per student
 - Implemented stepwise model selection
+
+  ```
+  # Model selection
+# Use Forward and Backward Stepwise Regression Selection (AIC)
+
+min_model = lm(Tuition ~ 1, data = obs_60_final)
+max_model = formula(lm(Tuition ~ Rank + S.F.Ratio + Unemployment + Diversity_Rank_Race + Expend+ institutionalControl+number_Undergrads+Median_Income+Grad.Rate+Crime.Rate+Cost_of_Living, data = obs_60_final))
+best_model = step(min_model, direction = "both", scope = max_model)
+
+# View best model
+best_model
+```
 - Employed leave-one-out cross-validation (LOOCV) for model validation:
   - Iteratively trained the model on all observations except one.
   - Used the excluded observation as a test set.
