@@ -104,6 +104,8 @@ model1$results
   - Utilized histograms and scatter plots to illustrate the distribution of tuition rates and correlations among predictors.
   - Calculated descriptive statistics to summarize central tendency, dispersion, and data distribution shape.
 - Identified patterns and anomalies in the data, informing the modeling process and enhancing understanding of factors influencing tuition rates across institutions.
+![Graph 1](https://raw.githubusercontent.com/RoryQo/R-Tuition-Variation-Research/main/graph1.jpg)
+
 
 ## Model Summary
 The model results reveal significant predictors of tuition rates. The analysis provides estimates for each predictor, indicating that higher-ranked institutions tend to have lower tuition. Significant predictors include institutional control, rank, median income, and expenditure per student.
