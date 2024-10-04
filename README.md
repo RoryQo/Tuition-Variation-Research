@@ -2,6 +2,10 @@
 
 # Tuition Variation and Prediction Project
 
+<a href="https://github.com/RoryQo/R-Tuition-Variation-Research/blob/main/Full%20Paper%3A%20Paying%20for%20Prestige.pdf" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #002D72; border-radius: 5px; text-decoration: none;">Download Full Paper</a>
+
+
+
 </div>
 
 ## Table of Contents
