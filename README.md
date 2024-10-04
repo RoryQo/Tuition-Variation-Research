@@ -59,6 +59,7 @@ The study uses seven predictors:
   - Median income
   - Diversity rank
   - Expenditure per student
+- Implemented stepwise model selection
 - Employed leave-one-out cross-validation (LOOCV) for model validation:
   - Iteratively trained the model on all observations except one.
   - Used the excluded observation as a test set.
