@@ -61,8 +61,8 @@ The study uses seven predictors:
   - Expenditure per student
 - Implemented stepwise model selection
 
-  ```
-  # Model selection
+```
+# Model selection
 # Use Forward and Backward Stepwise Regression Selection (AIC)
 
 min_model = lm(Tuition ~ 1, data = obs_60_final)
