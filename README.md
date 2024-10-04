@@ -104,7 +104,8 @@ model1$results
   - Utilized histograms and scatter plots to illustrate the distribution of tuition rates and correlations among predictors.
   - Calculated descriptive statistics to summarize central tendency, dispersion, and data distribution shape.
 - Identified patterns and anomalies in the data, informing the modeling process and enhancing understanding of factors influencing tuition rates across institutions.
-![Graph 1](https://raw.githubusercontent.com/RoryQo/R-Tuition-Variation-Research/main/graph1.jpg)
+<img src="https://raw.githubusercontent.com/RoryQo/R-Tuition-Variation-Research/main/graph1.jpg" width="400" />
+
 
 
 ## Model Summary
