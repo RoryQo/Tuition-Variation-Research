@@ -1,51 +1,53 @@
 <div align="center"> 
 
 # Tuition Variation and Prediction Project
- 
-<a href="https://github.com/RoryQo/R-Tuition-Variation-Research/blob/main/Full%20Paper%3A%20Paying%20for%20Prestige.pdf" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #002D72; border-radius: 5px; text-decoration: none;">Download Full Paper</a>
+<br>
 
-
+[![Download Full Paper](https://img.shields.io/badge/Download%20Full%20Paper-0056A0?style=for-the-badge&logo=github&logoColor=white&labelColor=0056A0)](https://github.com/RoryQo/R-Tuition-Variation-Research/blob/main/Full%20Paper%3A%20Paying%20for%20Prestige.pdf)
 
 </div>
+
+
 <table align="center">
   <tr>
-    <td colspan="2" align="center"><strong>Table of Contents</strong></td>
+    <td colspan="2" align="center" style="background-color: white; color: black;"><strong>Table of Contents</strong></td>
   </tr>
   <tr>
-    <td>1. <a href="#statement-of-purpose">Statement of Purpose</a></td>
-    <td>6. <a href="#data">Data</a></td>
+    <td style="background-color: white; color: black; padding: 10px;">1. <a href="#statement-of-purpose" style="color: black;">Statement of Purpose</a></td>
+    <td style="background-color: gray; color: black; padding: 10px;">6. <a href="#data" style="color: black;">Data</a></td>
   </tr>
   <tr>
-    <td>2. <a href="#abstract">Abstract</a></td>
-    <td>7. <a href="#usage">Usage</a></td>
+    <td style="background-color: gray; color: black; padding: 10px;">2. <a href="#abstract" style="color: black;">Abstract</a></td>
+    <td style="background-color: white; color: black; padding: 10px;">7. <a href="#usage" style="color: black;">Usage</a></td>
   </tr>
   <tr>
-    <td>3. <a href="#key-findings">Key Findings</a></td>
-    <td>8. <a href="#limitations-and-future-research">Limitations and Future Research</a></td>
+    <td style="background-color: white; color: black; padding: 10px;">3. <a href="#key-findings" style="color: black;">Key Findings</a></td>
+    <td style="background-color: gray; color: black; padding: 10px;">8. <a href="#limitations-and-future-research" style="color: black;">Limitations and Future Research</a></td>
   </tr>
   <tr>
-    <td>
-      4. <a href="#methodology">Methodology</a>
+    <td style="background-color: gray; color: black; padding: 10px;">
+      4. <a href="#methodology" style="color: black;">Methodology</a><br>
+      &nbsp;&nbsp;&nbsp;- <a href="#data-collection" style="color: black;">Data Collection</a><br>
+      &nbsp;&nbsp;&nbsp;- <a href="#variables" style="color: black;">Variables</a><br>
+      &nbsp;&nbsp;&nbsp;- <a href="#wrangling" style="color: black;">Wrangling</a><br>
+      &nbsp;&nbsp;&nbsp;- <a href="#exploration" style="color: black;">Exploration</a><br>
+      &nbsp;&nbsp;&nbsp;- <a href="#statistical-modeling" style="color: black;">Statistical Modeling</a>
     </td>
-    <td>
-      5. <a href="#model-summary">Model Summary</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      &nbsp;&nbsp;&nbsp;- <a href="#data-collection">Data Collection</a><br>
-      &nbsp;&nbsp;&nbsp;- <a href="#variables">Variables</a><br>
-      &nbsp;&nbsp;&nbsp;- <a href="#wrangling">Wrangling</a><br>
-      &nbsp;&nbsp;&nbsp;- <a href="#exploration">Exploration</a><br>
-      &nbsp;&nbsp;&nbsp;- <a href="#statistical-modeling">Statistical Modeling</a>
-    </td>
-    <td>
-      &nbsp;&nbsp;&nbsp;- <a href="#regression-results">Regression Results</a><br>
-      &nbsp;&nbsp;&nbsp;- <a href="#regression-analysis">Regression Analysis</a><br>
-      &nbsp;&nbsp;&nbsp;- <a href="#model-assumptions">Model Assumptions</a>
+    <td style="background-color: gray; color: black; padding: 10px;">
+      5. <a href="#model-summary" style="color: black;">Model Summary</a><br>
+      &nbsp;&nbsp;&nbsp;- <a href="#regression-results" style="color: black;">Regression Results</a><br>
+      &nbsp;&nbsp;&nbsp;- <a href="#regression-analysis" style="color: black;">Regression Analysis</a><br>
+      &nbsp;&nbsp;&nbsp;- <a href="#model-assumptions" style="color: black;">Model Assumptions</a>
     </td>
   </tr>
 </table>
+
+
+
+
+
+
+
 
 
 
