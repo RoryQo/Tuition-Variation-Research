@@ -19,11 +19,13 @@
    - [Wrangling](#wrangling)
    - [Exploration](#exploration)
 5. [Model Summary](#model-summary)
+     - [Regression Results](#regression-results) 
      - [Regression Analysis](#regression-analysis)
-6. [Data](#data)
-7. [Usage](#usage)
-8. [Limitations and Future Research](#limitations-and-future-research)
-9. [References](#references)
+     - [Model Assumptions](#model-assumptions)
+7. [Data](#data)
+8. [Usage](#usage)
+9. [Limitations and Future Research](#limitations-and-future-research)
+10. [References](#references)
 
 ## Statement of Purpose
 This paper isolates and uses key factors to predict tuition for public and private four-year universities across the United States within the same year. Institutional, quality of life, and crime rate metrics are observed to explain the differences between current university tuition rates. While much research has been conducted to explain time series data of tuition increases, research to explain the variation in tuition prices while holding time constant is scarce. Understanding these variations can provide insights into time series research and establish market value for colleges based on key predictors, helping students maximize their return on investment and minimize student loan debt.
@@ -120,6 +122,11 @@ model1$results
 ## Model Summary
 The model results reveal significant predictors of tuition rates. The analysis provides estimates for each predictor, indicating that higher-ranked institutions tend to have lower tuition. Significant predictors include institutional control, rank, median income, and expenditure per student.
 
+### Regression Results
+
+<img src="https://raw.githubusercontent.com/RoryQo/Tuition-Variation-Research/main/graph3.jpg" alt="Graph 2" style="width: 50%; height: auto;">
+
+
 ### Regression Analysis
 - Focused on fitting a linear model to the cleaned dataset using selected predictors.
 - Evaluated the significance of each predictor's contribution to the overall model:
@@ -128,6 +135,14 @@ The model results reveal significant predictors of tuition rates. The analysis p
 - Indicated minimal overfitting using leave-one-out cross-validation (LOOCV):
   - R-squared value remained stable across various data subsets.
   - Suggested effective generalization to unseen data, enhancing model reliability.
+
+### Model Assumptions
+- Check model assumptions with QQ and residual plot
+	- The plot show a random distribution of residuals about zero (no clear pattern)
+ 	- The qq plot shows that the pattern of residuals follows a straight line indicating a linear relationship.
+
+<img src="https://raw.githubusercontent.com/RoryQo/Tuition-Variation-Research/main/graph2.jpg" alt="Graph 2" style="width: 50%; height: auto;">
+
 
 
 ## Data
