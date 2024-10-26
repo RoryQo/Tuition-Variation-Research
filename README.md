@@ -112,15 +112,6 @@ The study uses seven predictors:
 <br>
 
 - Constructed a comprehensive linear model using seven identified predictors to assess tuition variability.
-- Predictors included:
-  - Institutional control (public or private)
-  - National rank
-  - Number of undergraduates
-  - Unemployment rate
-  - Median income
-  - Diversity rank
-  - Expenditure per student
-- Implemented stepwise model selection
 
 ```
 # Model selection
