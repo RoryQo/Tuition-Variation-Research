@@ -3,7 +3,8 @@
 # Tuition Variation and Prediction Project
 <br>
 
-[![Download Full Paper](https://img.shields.io/badge/Download%20Full%20Paper-0056A0?style=for-the-badge&logo=github&logoColor=white&labelColor=0056A0)](https://github.com/RoryQo/R-Tuition-Variation-Research/blob/main/Full%20Paper%3A%20Paying%20for%20Prestige.pdf)
+[![Download Full Paper](https://img.shields.io/badge/Download%20Full%20Paper-0056A0?style=for-the-badge&logo=github&logoColor=white&labelColor=0056A0)](https://raw.githubusercontent.com/RoryQo/R-Tuition-Variation-Research/main/Full%20Paper%3A%20Paying%20for%20Prestige.pdf)
+
 
 </div>
 
