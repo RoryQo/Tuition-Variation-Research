@@ -1,0 +1,174 @@
+---
+
+output:
+  pdf_document:
+    latex_engine: pdflatex
+---
+
+
+<center> <h1> **Regression** </h1> </center>
+<h3> **Set up** </h3>
+```{r, message=F,warning=F}
+library(dplyr)
+library(caret)
+library(stargazer)
+library(tinytex)
+
+# Load Data from previous section
+obs_60_final<- read.csv('C:\\Users\\roryq\\Downloads\\Stat 1223\\obs_60_final.csv')
+
+
+# Filter by private or public schools
+Private_60 = obs_60_final[which(obs_60_final$institutionalControl == "private"),]
+Private_60<- Private_60 %>% select(Tuition,Expend,Median_Income, number_Undergrads,Rank)
+Public_60 = obs_60_final[which(obs_60_final$institutionalControl == "public"),]
+Public_60<- Public_60 %>% select(Tuition,Expend,Median_Income, number_Undergrads,Rank)
+
+```
+
+<h3> **Check for Interaction Terms** </h3>
+
+
+```{r}
+# Check for interaction terms
+
+
+# Create 2 linear regression models one with private and one
+  # with public to compare expenditure per student and tuition levels
+model_pri60 = lm(Tuition ~ Rank, data = Private_60)
+model_pub60 = lm(Tuition ~ Rank, data = Public_60)
+
+plot.new() # Add grid to look pretty
+grid(nx = 6, # X-axis divided in two sections
+ ny = 3, # Y-axis divided in three sections
+ lty = 2, col = "gray96", lwd = 2)
+par(new = TRUE)
+
+# Scatterplot with groups
+# Specify colors to be used in scatterplot
+colors = c("darkblue", "gray11")  
+plot(obs_60_final$Rank, obs_60_final$Tuition, pch = c(24,21), 
+col = colors[factor(obs_60_final$institutionalControl)],bg=c("lightblue", "brown") ,
+xlab = "Rank", ylab = "Tuition ($)" , ylim= c(0,90000),
+main= "Comparison of Tuition and Rank Between Public and Private School")
+
+abline(model_pri60, col = "darkblue")  # Plot the regression line for private colleges
+
+abline(model_pub60, col = "brown")   # Plot the regression line for public colleges
+
+
+
+
+# Add legend
+legend("topright", title="Legend", legend= 
+c("Private","Public "),pt.bg=c("light blue", "brown"),bg=
+"whitesmoke", pch= c(24,21),cex=1.1)
+```
+
+```{r}
+rbind(confint(model_pri60,'Rank',level=0.975),confint(model_pub60,'Rank',level=0.975))
+```
+
++ From the graphs the regression lines intersect, again suggesting an interaction term.  However with further inspection we can see the confidence intervals for the slopes of the two regressions overlap, thins indicates that there isnt a significant difference between them for our purposes.
+
+<h3> **Fit Full Model** </h3>
+```{r}
+
+# Create linear regression model with all factors we are interested
+ model = lm(Tuition ~ Rank+S.F.Ratio+Unemployment+Diversity_Rank_Race+ Expend+perc.alumni
++institutionalControl+number_Undergrads+
+Median_Income+Grad.Rate+ Crime.Rate+Cost_of_Living+AVG_C_two_I , data = obs_60_final)
+ 
+# Print model summary
+summary(model)
+```
+
+```{r}
+# Check model assumptions
+par(mfrow= c(1,2))
+plot(model, which= c(1,2))
+```
+
++ Residuals appear randomly dispersed around zero, implying there is no heteroskewdasticity
++ QQ plot appears to follow a straight line, although extreme outliers at the top of the range begin to affect the very top of the plot, showing that our observations are approximately normal with a slight left skew
+
+<h3> **Model Selection** </h3>
+```{r}
+
+# Model selection
+# Use Forward and Backward Stepwise Regression Selection (AIC)
+
+min_model = lm(Tuition ~ 1, data = obs_60_final)
+max_model = formula(lm(Tuition ~ Rank + S.F.Ratio + Unemployment + Diversity_Rank_Race +
+Expend+ institutionalControl+number_Undergrads+Median_Income
++Grad.Rate+Crime.Rate+Cost_of_Living, data = obs_60_final))
+best_model = step(min_model, direction = "both", scope = max_model)
+
+# View best model
+best_model
+```
+
+```{r}
+
+# Model validation
+# Use Leave One Our Cross Validation
+
+ctrl = trainControl(method = "LOOCV")
+model1 = train(Tuition ~ Rank + institutionalControl + Median_Income + 
+Diversity_Rank_Race + Unemployment + number_Undergrads + Expend,
+data = obs_60_final, method = "lm", trControl = ctrl)
+model1$results
+
+
+```
+
+```{r,results='asis'}
+# print summary of best model
+stargazer(best_model, se = list(best_model$rse))
+```
+
+```{r}
+# Check model assumptions
+par(mfrow= c(1,2))
+plot(best_model, which= c(1,2))
+```
++ The selected model preforms better in the QQ plot upper ranges.  Residuals appear randomly dispersed around zero
+
+
+<h3> **Predicting Tuition** </h3>
+
+```{r}
+
+# Impute data for University of Pittsburgh
+# Select mean for diversity rank because data not available
+point<-data.frame(Rank=67,
+                  institutionalControl="public"
+                  ,Median_Income=34022
+                  ,Diversity_Rank_Race= as.numeric(mean(obs_60_final$Diversity_Rank_Race))
+                  , Unemployment= 0.04
+                  ,number_Undergrads=19928
+                  ,Expend=15000)
+```
+
+```{r}
+pred<-predict(best_model,point);pred
+```
++ Pitt yearly tuition is in state tuition is $22,000 per year and out of state tuition is 37,320
++ The predicted tuition according to out model was $29,843
++ Pitt is below market price for in state students and above market price for out of state students according to our model
+
+<h3> **The Power of Prestige** </h3>
+```{r}
+summary(lm(Tuition ~ Rank, data = obs_60_final))
+```
+
+```{r}
+plot(obs_60_final$Rank, obs_60_final$Tuition, pch = 24, col = "darkblue",bg="lightblue" 
+,xlab = "Rank", ylab = "Tuition ($)" ,  main= "Rank Predicting Tuition")
+
+abline(lm(Tuition ~ Rank, data = obs_60_final), col = "darkblue")   
+# Plot the regression line for Rank
+```
+
+
+
