@@ -54,6 +54,11 @@ The study uses seven predictors:
 - **Expenditure per Student**: Financial resources spent per student.
 
 ### Statistical Modeling
+  ```math
+     Tuition = \beta_0 + \beta_1 institution_i + \beta_2 rank + \beta_3 undergrads + \beta_4 unemployment +\beta_5 income + \beta_6 diversity + \beta_7 expenditure + \epsilon_i
+  ```
+<br>
+
 - Constructed a comprehensive linear model using seven identified predictors to assess tuition variability.
 - Predictors included:
   - Institutional control (public or private)
