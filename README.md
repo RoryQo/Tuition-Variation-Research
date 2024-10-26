@@ -154,8 +154,10 @@ The model results reveal significant predictors of tuition rates. The analysis p
 
 ### Regression Results
 
-<img src="https://raw.githubusercontent.com/RoryQo/Tuition-Variation-Research/main/graph3.jpg" alt="Graph 2" style="width: 50%; height: auto;">
-
+<div style="display: flex; justify-content: center; align-items: flex-start;">
+  <img src="https://raw.githubusercontent.com/RoryQo/Tuition-Variation-Research/main/graph3.jpg" alt="Graph 3" style="width: 45%; height: auto;">
+  <img src="https://raw.githubusercontent.com/RoryQo/Tuition-Variation-Research/main/graph4.jpg" alt="Graph 4" style="width: 45%; height: auto;">
+</div>
 
 ### Regression Analysis
 - Focused on fitting a linear model to the cleaned dataset using selected predictors.
