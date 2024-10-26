@@ -15,9 +15,9 @@
 4. [Methodology](#methodology)
    - [Data Collection](#data-collection)
    - [Variables](#variables)
-   - [Statistical Modeling](#statistical-modeling)
    - [Wrangling](#wrangling)
    - [Exploration](#exploration)
+   - [Statistical Modeling](#statistical-modeling)
 5. [Model Summary](#model-summary)
      - [Regression Results](#regression-results) 
      - [Regression Analysis](#regression-analysis)
@@ -54,6 +54,29 @@ The study uses seven predictors:
 - **Median Income**: Reported median income for the surrounding city.
 - **Diversity Rank**: Ranking of the city's racial diversity (lower is more diverse).
 - **Expenditure per Student**: Financial resources spent per student.
+
+
+### Wrangling
+- Conducted systematic data cleaning and organization to prepare for analysis:
+  - Merged three separate datasets to create a comprehensive dataset:
+    - **US College Data** from Kaggle, providing institutional characteristics.
+    - **Quality of Life Data** sourced from the FCC, offering economic indicators.
+    - **Crime Rates by City** dataset from City-Data.com, detailing safety metrics.
+  - Identified and addressed missing values through imputation or removal.
+  - Categorical variables were appropriately encoded for analysis.
+  - Checked continuous variables for outliers and inconsistencies.
+- Ensured all variables were correctly formatted to align with analytical requirements.
+- Final dataset comprised 60 well-structured observations reflecting top US universities.
+
+
+### Exploration
+- Conducted data exploration through visualizations and descriptive statistics:
+  - Utilized histograms and scatter plots to illustrate the distribution of tuition rates and correlations among predictors.
+  - Calculated descriptive statistics to summarize central tendency, dispersion, and data distribution shape.
+- Identified patterns and anomalies in the data, informing the modeling process and enhancing understanding of factors influencing tuition rates across institutions.
+<img src="https://raw.githubusercontent.com/RoryQo/R-Tuition-Variation-Research/main/graph1.jpg" width="400" />
+
+
 
 ### Statistical Modeling
   ```math
@@ -96,26 +119,6 @@ model1 = train(Tuition ~ Rank + institutionalControl + Median_Income +
 Diversity_Rank_Race + Unemployment + number_Undergrads + Expend, data = obs_60_final, method = "lm", trControl = ctrl)
 model1$results
 ```
-
-### Wrangling
-- Conducted systematic data cleaning and organization to prepare for analysis:
-  - Merged three separate datasets to create a comprehensive dataset:
-    - **US College Data** from Kaggle, providing institutional characteristics.
-    - **Quality of Life Data** sourced from the FCC, offering economic indicators.
-    - **Crime Rates by City** dataset from City-Data.com, detailing safety metrics.
-  - Identified and addressed missing values through imputation or removal.
-  - Categorical variables were appropriately encoded for analysis.
-  - Checked continuous variables for outliers and inconsistencies.
-- Ensured all variables were correctly formatted to align with analytical requirements.
-- Final dataset comprised 60 well-structured observations reflecting top US universities.
-
-
-### Exploration
-- Conducted data exploration through visualizations and descriptive statistics:
-  - Utilized histograms and scatter plots to illustrate the distribution of tuition rates and correlations among predictors.
-  - Calculated descriptive statistics to summarize central tendency, dispersion, and data distribution shape.
-- Identified patterns and anomalies in the data, informing the modeling process and enhancing understanding of factors influencing tuition rates across institutions.
-<img src="https://raw.githubusercontent.com/RoryQo/R-Tuition-Variation-Research/main/graph1.jpg" width="400" />
 
 
 
