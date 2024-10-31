@@ -144,7 +144,7 @@ model1$results
 
 
 ## Model Summary
-The model results reveal significant predictors of tuition rates. The analysis provides estimates for each predictor, indicating that higher-ranked institutions tend to have lower tuition. Significant predictors include institutional control, rank, median income, and expenditure per student.
+The model results reveal significant predictors of tuition rates. The analysis provides estimates for each predictor, indicating that higher(numerically)-ranked institutions tend to have lower tuition. Significant predictors include institutional control, rank, median income, and expenditure per student.
 
 ### Regression Results
 
