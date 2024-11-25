@@ -149,8 +149,8 @@ The model results reveal significant predictors of tuition rates. The analysis p
 ### Regression Results
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
-  <img src="https://raw.githubusercontent.com/RoryQo/Tuition-Variation-Research/main/graph3.jpg" alt="Graph 3" style="width: 45%; height: auto;">
-  <img src="https://raw.githubusercontent.com/RoryQo/Tuition-Variation-Research/main/graph4.jpg" alt="Graph 4" style="width: 45%; height: auto;">
+  <img src="https://raw.githubusercontent.com/RoryQo/Tuition-Variation-Research/main/Figures/graph3.jpg" alt="Graph 3" style="width: 45%; height: auto;">
+  <img src="https://raw.githubusercontent.com/RoryQo/Tuition-Variation-Research/main/Figures/graph4.jpg" alt="Graph 4" style="width: 45%; height: auto;">
 </div>
 
 ### Regression Analysis
@@ -167,7 +167,7 @@ The model results reveal significant predictors of tuition rates. The analysis p
 	- The plot show a random distribution of residuals about zero (no clear pattern)
  	- The qq plot shows that the pattern of residuals follows a straight line indicating a linear relationship.
 
-<img src="https://raw.githubusercontent.com/RoryQo/Tuition-Variation-Research/main/graph2.jpg" alt="Graph 2" style="width: 50%; height: auto;">
+<img src="https://raw.githubusercontent.com/RoryQo/Tuition-Variation-Research/main/Figures/graph2.jpg" alt="Graph 2" style="width: 50%; height: auto;">
 
 
 
