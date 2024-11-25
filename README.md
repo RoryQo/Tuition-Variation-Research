@@ -104,7 +104,7 @@ The study uses seven predictors:
   - Utilized histograms and scatter plots to illustrate the distribution of tuition rates and correlations among predictors.
   - Calculated descriptive statistics to summarize central tendency, dispersion, and data distribution shape.
 - Identified patterns and anomalies in the data, informing the modeling process and enhancing understanding of factors influencing tuition rates across institutions.
-<img src="https://raw.githubusercontent.com/RoryQo/R-Tuition-Variation-Research/main/graph1.jpg" width="400" />
+<img src="https://github.com/RoryQo/Tuition-Variation-Research/blob/main/Figures/graph1.jpg" width="400" />
 
 
 
@@ -149,8 +149,8 @@ The model results reveal significant predictors of tuition rates. The analysis p
 ### Regression Results
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
-  <img src="https://raw.githubusercontent.com/RoryQo/Tuition-Variation-Research/main/Figures/graph3.jpg" alt="Graph 3" style="width: 45%; height: auto;">
-  <img src="https://raw.githubusercontent.com/RoryQo/Tuition-Variation-Research/main/Figures/graph4.jpg" alt="Graph 4" style="width: 45%; height: auto;">
+  <img src="https://github.com/RoryQo/Tuition-Variation-Research/blob/main/Figures/graph3.jpg" alt="Graph 3" style="width: 45%; height: auto;">
+  <img src="https://github.com/RoryQo/Tuition-Variation-Research/blob/main/Figures/graph4.jpg" alt="Graph 4" style="width: 45%; height: auto;">
 </div>
 
 ### Regression Analysis
@@ -167,7 +167,7 @@ The model results reveal significant predictors of tuition rates. The analysis p
 	- The plot show a random distribution of residuals about zero (no clear pattern)
  	- The qq plot shows that the pattern of residuals follows a straight line indicating a linear relationship.
 
-<img src="https://raw.githubusercontent.com/RoryQo/Tuition-Variation-Research/main/Figures/graph2.jpg" alt="Graph 2" style="width: 50%; height: auto;">
+<img src="https://github.com/RoryQo/Tuition-Variation-Research/blob/main/Figures/graph2.jpg" alt="Graph 2" style="width: 50%; height: auto;">
 
 
 
