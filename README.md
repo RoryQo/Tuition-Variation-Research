@@ -63,17 +63,11 @@ This paper isolates and uses key factors to predict tuition for public and priva
 ## Abstract
 This paper isolates and uses key factors to predict tuition for public and private four-year universities within the same year. A total of 60 observations from the top 400 US universities are analyzed using seven predictors in a linear model. The model accounts for over 85% of the variability in tuition rates, with the university's national ranking identified as the only significant institutional metric contributing to tuition cost.
 
-## Key Findings
-These results show that we can explain most of the tuition variability while holding time constant. Tuition increases as the school ranks improve. This relationship is expected because more desirable (prestigious) schools can leverage this and charge their students a premium. What's impressive is the significance of this relationship. In a simple linear regression, Rank accounts for 65% of tuition variation.
-	
- Variables in this model that were insignificant tell us just as much about the higher education market as the ones that were. Besides Rank, no other _institutional_ metrics were statistically significant at the 0.1 confidence level (excluding the private vs. public control). Student-to-faculty ratios, graduation rate, or percentage of alumni donating to the university were irrelevant to predicting tuition despite these metrics being widely touted and used in recruitment brochures and websites. Today's college students pay for Prestige rather than a school that invests in them.
-
-To evaluate my own tuition costs, I applied the model to the University of Pittsburgh (Pitt). The analysis indicated that out-of-state students face tuition that is approximately $9,000 above the expected value. This indicates that, as out-of-state student at pitt are receiving a lower than average ROI. Unfortunately, I did not have data to apply to in-state tuition or cost-after aid.  As an in-state student, I have a much higher ROI than out-of-state students, considering we are both receiving the same education. Notably, the model's successful prediction of Pitt's tuition underscores its practical applicability in real-world scenarios, offering valuable insights for prospective students evaluating their educational investments.
 
 ## Methodology
 
 ### Data Collection
-The data used for this model consists of 60 observations representing four-year universities in the US, sourced from three publicly available datasets. These datasets include metrics such as institutional characteristics, quality of life, and crime rates.
+The data used for this model consists of 60 observations representing the top 400 four-year universities in the US, sourced from three publicly available datasets. These datasets include metrics such as institutional characteristics, quality of life, and crime rates.
 
 ### Variables
 The study uses seven predictors:
@@ -170,16 +164,12 @@ The model results reveal significant predictors of tuition rates. The analysis p
 <img src="https://github.com/RoryQo/Tuition-Variation-Research/blob/main/Figures/graph2.jpg" alt="Graph 2" style="width: 50%; height: auto;">
 
 
+## Key Findings
+These results show that we can explain most of the tuition variability while holding time constant. Tuition increases as the school ranks improve. This relationship is expected because more desirable (prestigious) schools can leverage this and charge their students a premium. What's impressive is the significance of this relationship. In a simple linear regression, Rank accounts for 65% of tuition variation.
+	
+ Variables in this model that were insignificant tell us just as much about the higher education market as the ones that were. Besides Rank, no other _institutional_ metrics were statistically significant at the 0.1 confidence level (excluding the private vs. public control). Student-to-faculty ratios, graduation rate, or percentage of alumni donating to the university were irrelevant to predicting tuition despite these metrics being widely touted and used in recruitment brochures and websites. Today's college students pay for Prestige rather than a school that invests in them.
 
-## Data
-The datasets were collected from reputable sources, ensuring quality and reliability. The final dataset was cleaned and prepared for analysis, focusing on the top 400 universities in the US.
-
-## Usage
-To use the analysis scripts:
-1. **Install Required Packages**: Ensure you have the necessary R packages installed.
-2. **Load the Data**: Import the cleaned dataset for analysis.
-3. **Run the Analysis**: Execute the provided R scripts to generate the model and visualizations.
-4. **Review Results**: Analyze the summaries and visualizations to interpret the findings.
+To evaluate my own tuition costs, I applied the model to the University of Pittsburgh (Pitt). The analysis indicated that out-of-state students face tuition that is approximately $9,000 above the expected value. This indicates that, as out-of-state student at pitt are receiving a lower than average ROI. Unfortunately, I did not have data to apply to in-state tuition or cost-after aid.  As an in-state student, I have a much higher ROI than out-of-state students, considering we are both receiving the same education. Notably, the model's successful prediction of Pitt's tuition underscores its practical applicability in real-world scenarios, offering valuable insights for prospective students evaluating their educational investments.
 
 ## Limitations and Future Research
 While the model performed well, the sample size is limited, which may not capture the full variability in tuition prices. Future research could explore differences between public and private institutions more deeply or validate the model with different datasets to identify evolving market factors.
