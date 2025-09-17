@@ -3,7 +3,13 @@
 # Tuition Variation and Prediction Research
 <br>
 
-[![Download Full Research Paper](https://img.shields.io/badge/Download%20Full%20Research%20Paper-0056A0?style=for-the-badge&logo=github&logoColor=white&labelColor=0056A0)](https://raw.githubusercontent.com/RoryQo/R-Tuition-Variation-Research/main/Full%20Paper%20Paying%20for%20Prestige.pdf)
+
+<p align="center">
+  <a href="https://raw.githubusercontent.com/RoryQo/Tuition-Variation-Research/main/Full%20Paper%20Paying%20for%20Prestige.pdf" download>
+    <img src="https://img.shields.io/static/v1?label=&message=Download%20Full%20Research%20Paper&labelColor=grey&color=blue&logo=github&logoColor=white&scale=10" alt="Download Full Research Paper" height= "100">
+  </a>
+</p>
+
 
 
 
