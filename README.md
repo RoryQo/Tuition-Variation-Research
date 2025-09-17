@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://raw.githubusercontent.com/RoryQo/Tuition-Variation-Research/main/Full%20Paper%20Paying%20for%20Prestige.pdf" download>
-    <img src="https://img.shields.io/static/v1?label=&message=Download%20Full%20Research%20Paper&labelColor=grey&color=blue&logo=github&logoColor=white&scale=10" alt="Download Full Research Paper" height= "100">
+    <img src="https://img.shields.io/static/v1?label=&message=Download%20Full%20Research%20Paper&labelColor=6E6E6E&color=blue&logo=github&logoColor=white&scale=10" alt="Download Full Research Paper" height= "100">
   </a>
 </p>
 
