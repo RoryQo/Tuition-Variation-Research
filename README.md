@@ -1,6 +1,6 @@
 <div align="center"> 
 
-# Tuition Variation and Prediction Project
+# Tuition Variation and Prediction Research
 <br>
 
 [![Download Full Paper](https://img.shields.io/badge/Download%20Full%20Paper-0056A0?style=for-the-badge&logo=github&logoColor=white&labelColor=0056A0)](https://raw.githubusercontent.com/RoryQo/R-Tuition-Variation-Research/main/Full%20Paper%20Paying%20for%20Prestige.pdf)
@@ -8,26 +8,25 @@
 
 </div>
 
-
 <table align="center">
   <tr>
     <td colspan="2" align="center" style="background-color: white; color: black;"><strong>Table of Contents</strong></td>
   </tr>
   <tr>
-    <td style="background-color: white; color: black; padding: 10px;">1. <a href="#statement-of-purpose" style="color: black;">Statement of Purpose</a></td>
-    <td style="background-color: gray; color: black; padding: 10px;">6. <a href="#data" style="color: black;">Data</a></td>
+	<td style="background-color: gray; color: black; padding: 10px;">1. <a href="#abstract" style="color: black;">Abstract</a></td>
+    <td style="background-color: gray; color: black; padding: 10px;">5. <a href="#model-summary" style="color: black;">Model Summary</a><br>
+      &nbsp;&nbsp;&nbsp;- <a href="#regression-results" style="color: black;">Regression Results</a><br>
+      &nbsp;&nbsp;&nbsp;- <a href="#regression-analysis" style="color: black;">Regression Analysis</a><br>
+      &nbsp;&nbsp;&nbsp;- <a href="#model-assumptions" style="color: black;">Model Assumptions</a>
+    </td>
   </tr>
   <tr>
-    <td style="background-color: gray; color: black; padding: 10px;">2. <a href="#abstract" style="color: black;">Abstract</a></td>
-    <td style="background-color: white; color: black; padding: 10px;">7. <a href="#usage" style="color: black;">Usage</a></td>
-  </tr>
-  <tr>
-    <td style="background-color: white; color: black; padding: 10px;">3. <a href="#key-findings" style="color: black;">Key Findings</a></td>
-    <td style="background-color: gray; color: black; padding: 10px;">8. <a href="#limitations-and-future-research" style="color: black;">Limitations and Future Research</a></td>
+    <td style="background-color: white; color: black; padding: 10px;">2. <a href="#key-findings" style="color: black;">Key Findings</a></td>
+    <td style="background-color: white; color: black; padding: 10px;">6. <a href="#limitations-and-future-research" style="color: black;">Limitations and Future Research</a></td>
   </tr>
   <tr>
     <td style="background-color: gray; color: black; padding: 10px;">
-      4. <a href="#methodology" style="color: black;">Methodology</a><br>
+      3. <a href="#methodology" style="color: black;">Methodology</a><br>
       &nbsp;&nbsp;&nbsp;- <a href="#data-collection" style="color: black;">Data Collection</a><br>
       &nbsp;&nbsp;&nbsp;- <a href="#variables" style="color: black;">Variables</a><br>
       &nbsp;&nbsp;&nbsp;- <a href="#wrangling" style="color: black;">Wrangling</a><br>
@@ -35,16 +34,10 @@
       &nbsp;&nbsp;&nbsp;- <a href="#statistical-modeling" style="color: black;">Statistical Modeling</a>
     </td>
     <td style="background-color: gray; color: black; padding: 10px;">
-      5. <a href="#model-summary" style="color: black;">Model Summary</a><br>
-      &nbsp;&nbsp;&nbsp;- <a href="#regression-results" style="color: black;">Regression Results</a><br>
-      &nbsp;&nbsp;&nbsp;- <a href="#regression-analysis" style="color: black;">Regression Analysis</a><br>
-      &nbsp;&nbsp;&nbsp;- <a href="#model-assumptions" style="color: black;">Model Assumptions</a>
+      7. <a href="#references" style="color: black;">References</a>
     </td>
   </tr>
 </table>
-
-
-
 
 
 
@@ -59,7 +52,7 @@
 This paper isolates and uses key factors to predict tuition for public and private four-year universities within the same year. A total of 60 observations from the top 400 US universities are analyzed using seven predictors in a linear model. The model accounts for over 85% of the variability in tuition rates, with the university's national ranking identified as the only significant institutional metric contributing to tuition cost.
 
 
-### Statement of Purpose
+#### Statement of Purpose
 This paper isolates and uses key factors to predict tuition for public and private four-year universities across the United States within the same year. Institutional, quality of life, and crime rate metrics are observed to explain the differences between current university tuition rates. While much research has been conducted to explain time series data of tuition increases, research to explain the variation in tuition prices while holding time constant is scarce. Understanding these variations can provide insights into time series research and establish market value for colleges based on key predictors, helping students maximize their return on investment and minimize student loan debt.
 
 
@@ -181,3 +174,9 @@ While the model performed well, the sample size is limited, which may not captur
 - McGurran, B. (2023). College Tuition Inflation: Compare The Cost Of College Over Time.
 - Vaughan, Z. (2016). "City/Zip/County/FIPS- Quality of Life (US)."
 - Wahyuddin, S., Fauzi, I. E., & Rijanto, E. (2019). "Analysis of Factors Affecting Tuition Fee in a Private University."
+
+## Condensed Version Notice
+This README is a condensed version of the full paper.  
+It highlights the main methodology, findings, and implications, but does not include all details.  
+For the complete analysis, please refer to the full paper linked at the top of this README.  
+
